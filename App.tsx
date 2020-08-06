@@ -7,7 +7,7 @@ import OnBoarding from './src/Authentication/OnBoarding';
 const AuthenticationStack = createStackNavigator();
 
 const AuthenticationNavigation = () => {
-  return (<AuthenticationStack.Navigator>
+  return (<AuthenticationStack.Navigator headerMode="none">
     <AuthenticationStack.Screen name="OnBoarding" component={OnBoarding} />
   </AuthenticationStack.Navigator>);
 };
